@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ageConverter {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+            System.out.println("Please enter your age in years.");
+            int userAge = scanner.nextInt();
+
+        int ageMonths = (userAge*12);
+        String ageMonthsP = ("You are " + ageMonths + (" months old."));
+        int ageDays = (userAge*365);
+        String ageDaysP = ("You are " + ageDays + " days old.");
+        int ageHours = (userAge*8760);
+        String ageHoursP = ("You are " + ageHours + " hours old.");
+        int ageMinutes = (ageHours*60);
+        String ageMinutesP = "You are " + ageMinutes + " minutes old.";
+        long ageSeconds = (ageMinutes*60);
+        String ageSecondsP = "You are " + ageSeconds + " seconds old.";
+
+        System.out.println("You are " + userAge + " years old.");
+        System.out.println(ageMonthsP);
+        System.out.println(ageDaysP);
+        System.out.println(ageHoursP);
+        System.out.println(ageMinutesP);
+        System.out.println(ageSecondsP);
+    }
+}
